@@ -53,6 +53,7 @@ ol li {
 	padding-top: 0;
 	margin-left: 15%;
 	float: left;
+	background-color: #F0F0F0
 }
 
 /*title*/
@@ -86,6 +87,34 @@ h2 {
 
 /*boxs-end*/
 
+/*inputs*/
+.inputs {
+	width: 92%;
+	margin-left: 3%;
+	margin-top: 3%;
+	float: left;
+}
+.sub-inputs{
+	margin-top: 15px
+}
+label {
+	font-size: 1.25em;
+	font-weight: 1.25em
+
+}
+input, textarea{
+	font-size: 1.25em;
+	
+	min-height: 15px;
+	min-width: 40%;
+	border: 1px solid #d1d2d2;
+	margin:0;
+}
+.appendix {
+	font-size: 0.75em;
+	font-weight: 0.75em
+}
+/*inputs-end*/
 /*tables*/
 .table {
 	width: 92%;
@@ -100,15 +129,13 @@ table {
 	width: 92%;
 	max-width: 92%;
 	vertical-align: top;
-	border-collapse: collapse;}
-
+	border-collapse: collapse;
+}
 thead, tfoot, tbody, th, td {
 	margin: 0%;
 	padding: 0%;
 	border: 1px solid #999;
 }
-
-
 colgroup {
 	border: 1px solid #d1d2d2;
 }
@@ -133,5 +160,3 @@ tbody td[colspan] {
 table#recaptcha_table, table.table-auto {
 	table-layout: auto;
 }
-
-
