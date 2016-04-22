@@ -25,7 +25,6 @@ a.h:hover, a.h:focus {
 	color: #999;
 	background: transparent;
 }
-
 /*sidebar */
 .sidebar {
 	width: 15%;
@@ -34,6 +33,7 @@ a.h:hover, a.h:focus {
 	float: left;
 	background-color: black;
 	color: gray;
+	overflow: hidden;
 }
 .sidebar-head {
 	padding: 20px 0em 10px 0.5em
@@ -43,9 +43,17 @@ a.h:hover, a.h:focus {
 	height: 150px;
 	margin-left: 1.25em
 }
+.username {
+	margin: 0 auto;
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 10px 0em 10px 2.25em;
+	color: white
+}
 .sidebar-list {
 	margin: 0 auto;
 	padding: 10px 0em 10px 1.25em;
+	overflow: hidden;
 }
 
 /*sidebar-end*/
@@ -62,10 +70,14 @@ a.h:hover, a.h:focus {
 /*title*/
 .title-pic {
 	width: 100%;
+	height: 500px;
+	background: url(../pic/1.jpg) no-repeat;
+	background-size: cover;
 }
 .title {
+	font-size: 2em;
 	position: relative;
-	margin-top: -80px;
+	margin-top: 450px;
 	text-align: center;
 	color: #842b00;
 }
