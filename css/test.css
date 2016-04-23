@@ -34,46 +34,71 @@ a.h:hover, a.h:focus {
 	float: left;
 	background-color: black;
 	color: gray;
+	overflow: hidden;
 }
 .sidebar-head {
 	padding: 20px 0em 10px 0.5em
 }
+#face {
+	width: 150px;
+	height: 150px;
+	margin-left: 1.25em
+}
+.username {
+	margin: 0 auto;
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 10px 0em 10px 2.25em;
+	color: white
+}
 .sidebar-list {
 	margin: 0 auto;
-}
-ol li {
 	padding: 10px 0em 10px 1.25em;
+	overflow: hidden;
 }
 
 /*sidebar-end*/
 
-/*content(title & boxs & tables & footer)*/
+/*content(title & boxs & inputs & tables & footer)*/
 .content {
 	width: 85%;
 	padding-top: 0;
 	margin-left: 15%;
 	float: left;
+	background-color: #F0F0F0
 }
 
 /*title*/
 .title-pic {
 	width: 100%;
+	height: 500px;
+	background: url(../pic/1.jpg) no-repeat;
+	background-size: cover;
 }
 .title {
+	font-size: 2em;
 	position: relative;
-	margin-top: -60px;
+	margin-top: 450px;
 	text-align: center;
-	color: #642100;
+	color: #842b00;
 }
 
 /*title-end*/
 
 /*boxs*/
-h2 {
+h2, h3 {
 	text-align: center;
 }
-.boxs {
+.boxs1 {
 	width: 30%;
+	margin-left: 2%;
+	margin-top: 2%;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+}
+.boxs2 {
+	width: 46%;
 	margin-left: 2%;
 	margin-top: 2%;
 	float: left;
@@ -83,13 +108,70 @@ h2 {
 .pics {
 	width: 100%;
 }
+.boxs3 {
+	width: 94.5%;
+	margin-left: 2%;
+	margin-top: 2%;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+}
+.articles {
+	width: 94.5%;
+	margin-left: 2%;
+	margin-top: 5%;
+	padding-bottom: 20px;
+	float: left;
+	border-bottom: solid;
+	border-width: 1px;
+}
 
 /*boxs-end*/
 
-/*tables*/
-.table {
+/*inputs*/
+.other {
+	margin-top: 100px
+}
+.inputs {
 	width: 92%;
 	margin-left: 3%;
+	margin-top: 3%;
+	float: left;
+}
+.sub-inputs {
+	margin-top: 15px
+}
+label {
+	width: 15%;
+	font-size: 1.25em;
+	font-weight: 1.25em
+}
+input, textarea {
+	font-size: 1em;
+	margin: 0;
+	min-height: 15px;
+	min-width: 40%;
+	border: 1px solid #d1d2d2;
+	display: block;
+	padding: 10px
+}
+.appendix {
+	font-size: 0.75em;
+	font-weight: 0.75em
+}
+#button1 {
+	font-size: 1.25em;
+	width: 20%;
+	height: 40px;
+	padding: 5px;
+}
+
+/*inputs-end*/
+
+/*tables*/
+.table {
+	width: 94.5%;
+	margin-left: 1.25%;
 	margin-top: 3%;
 	float: left;
 }
@@ -97,20 +179,15 @@ table {
 	position: relative;
 	padding: 25px;
 	margin-left: 2%;
-	width: 92%;
-	max-width: 92%;
+	width: 94.5%;
+	max-width: 94.5%;
 	vertical-align: top;
-	border-collapse: collapse;}
-
+	border-collapse: collapse;
+}
 thead, tfoot, tbody, th, td {
 	margin: 0%;
 	padding: 0%;
 	border: 1px solid #999;
-}
-
-
-colgroup {
-	border: 1px solid #d1d2d2;
 }
 th, td {
 	font-weight: inherit;
@@ -127,11 +204,45 @@ thead th {
 tbody th {
 	font-weight: 700;
 }
-tbody td[colspan] {
+tbody td {
 	text-align: center;
 }
-table#recaptcha_table, table.table-auto {
-	table-layout: auto;
+
+/*tables-end*/
+
+/*lists*/
+.list1 {
+	width: 27.6%;
+	margin-left: 3%;
+	margin-top: 2%;
+	float: left;
+}
+ul, ol {
+	padding-left: 24px;
+	margin: 16px 0;
+}
+ul li {
+	list-style-position: inside;
+	list-style-type: square outside;
+}
+ol li {
+	list-style-position: inside;
+	list-style-type: decimal outside;
+}
+dl, dd {
+	margin: 0 0 16px;
 }
 
+/*lists-end*/
 
+/*content-end*/
+footer {
+	width: 100%;
+	height: 25%;
+	z-index: -1;
+	background-color: #6C6C6C;
+}
+.footer {
+	margin-left: 50%;
+	padding: 50px;
+}
